@@ -1,0 +1,14 @@
+<section data-ng-controller="ProjectsController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Projects</h1>
+    </div>
+    
+    <div class="list-group">
+        <a data-ng-repeat="project in projects" class="list-group-item">
+			<h4 class="list-group-item-heading" data-ng-bind="project.title"></h4>
+			<h4 class="list-group-item-heading" data-ng-bind="project.startDate"></h4>
+			<h4 class="list-group-item-heading" data-ng-bind="project.status"></h4>
+            
+        </a>
+    </div>
+</section>
